@@ -40,3 +40,7 @@ The uploaded logo, brand graphic, and headshot are physically included in `asset
 - Added clickable "Call or Text 918.851.7246" to the desktop header.
 - Added clickable phone number to the footer.
 - Phone number uses a `tel:` link for mobile calling.
+
+## Version 7 changes
+- Added Craig Groeschel endorsement beneath the hero content.
+- Tightened the hero grid and reduced left-side whitespace.

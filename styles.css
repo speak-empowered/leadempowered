@@ -72,3 +72,14 @@
 @media(max-width:1100px){
   .phone-link{display:none}
 }
+
+/* Version 7: hero endorsement and tighter left-side layout */
+.hero-tight .hero-grid{max-width:1120px;grid-template-columns:1.45fr .55fr;gap:36px}
+.hero-tight .hero-grid>div:first-child{max-width:700px}
+.hero-endorsement{margin:34px 0 0;padding:20px 0 0 20px;border-left:3px solid #2b6b99;max-width:680px}
+.hero-endorsement p{font-family:Manrope,sans-serif;font-size:1.02rem;line-height:1.45;font-weight:600;color:#26373d;margin:0 0 9px}
+.hero-endorsement cite{display:block;font-family:"DM Sans",sans-serif;font-size:.78rem;line-height:1.45;font-style:normal;color:#5e6c70}
+@media(max-width:900px){
+  .hero-tight .hero-grid{grid-template-columns:1fr;gap:40px}
+  .hero-tight .hero-grid>div:first-child{max-width:none}
+}
