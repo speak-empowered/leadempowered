@@ -35,3 +35,8 @@ The uploaded logo, brand graphic, and headshot are physically included in `asset
 - Expanded the About Nathan section using current biography content from LeadEmpowered.com.
 - Added requested links for Leadership Alignment Gap, Leadership Assessment, The Empowered Leader Newsletter, Insights/blog, and Forbes.
 - Site remains standalone; no migration or redirects have been performed.
+
+## Version 6 changes
+- Added clickable "Call or Text 918.851.7246" to the desktop header.
+- Added clickable phone number to the footer.
+- Phone number uses a `tel:` link for mobile calling.

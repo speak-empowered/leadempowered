@@ -62,3 +62,13 @@
   .brand-logo{width:230px}
   .footer-logo{width:260px}
 }
+
+/* Version 6: phone contact */
+.phone-link{white-space:nowrap;font-size:.82rem!important;color:#2b6b99!important}
+.phone-link strong{font-weight:800}
+.footer-phone{margin-top:10px!important}
+.footer-phone a{color:#fff;text-decoration:none;font-weight:700}
+.footer-phone a:hover{text-decoration:underline}
+@media(max-width:1100px){
+  .phone-link{display:none}
+}
