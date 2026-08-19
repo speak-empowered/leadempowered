@@ -26,3 +26,12 @@ The uploaded logo, brand graphic, and headshot are physically included in `asset
 - Executive & Leadership Coaching links to https://leadershipreset.netlify.app/
 - Let's Talk opens a Netlify Forms contact modal.
 - No migration, redirects, or changes to the existing WordPress site.
+
+## Version 5 changes
+- Fixed image asset paths and simplified the active image set.
+- Added transparent header and footer logo assets.
+- Doubled desktop logo size in header/footer.
+- Tightened the hero's left-side spacing.
+- Expanded the About Nathan section using current biography content from LeadEmpowered.com.
+- Added requested links for Leadership Alignment Gap, Leadership Assessment, The Empowered Leader Newsletter, Insights/blog, and Forbes.
+- Site remains standalone; no migration or redirects have been performed.
