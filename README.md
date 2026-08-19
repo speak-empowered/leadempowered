@@ -51,3 +51,10 @@ The uploaded logo, brand graphic, and headshot are physically included in `asset
 - Made the supplied Lead Empowered hero thumbnail the dominant visual on the right.
 - Tightened the hero's horizontal spacing and reduced left-side empty space.
 - Preserved the Craig Groeschel endorsement beneath the hero copy.
+
+## Version 9 changes
+- Added Lead Empowered LLC purpose statement.
+- Added Nathan's leadership quote below his bio headshot.
+- Added seven client/participant testimonials.
+- Added Julie Read's Lead Empowered TV guest endorsement.
+- Added Testimonials to the primary navigation.
