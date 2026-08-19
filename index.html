@@ -5,15 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Lead Empowered helps small and mid-sized businesses build high-performing, burnout-free cultures through empowered leaders and aligned teams.">
   <title>Lead Empowered | Empowered Leaders. Aligned Teams. Healthier Cultures.</title>
-  <meta property="og:title" content="Lead Empowered | Empowered Leaders. Aligned Teams. Healthier Cultures.">
-  <meta property="og:description" content="Helping small and mid-sized businesses create high-performing, burnout-free cultures through empowered leaders and aligned teams.">
-  <meta property="og:image" content="/assets/lead-empowered-brand.png">
   <link rel="stylesheet" href="/styles.css">
+  <link rel="preload" as="image" href="/assets/lead-empowered-logo.png">
+  <link rel="preload" as="image" href="/assets/nathan-mitchell-headshot.png">
 </head>
 <body>
 <header class="site-header">
   <div class="container nav-wrap">
-    <a class="brand" href="/" aria-label="Lead Empowered home"><img src="/assets/lead-empowered-logo.png" alt="Lead Empowered — Unlock Your True Potential"></a>
+    <a class="brand-logo" href="/" aria-label="Lead Empowered home"><img src="/assets/lead-empowered-logo.png" alt="Lead Empowered — Unlock Your True Potential"></a>
     <nav>
       <a href="#services">Services</a>
       <a href="#about">About</a>
@@ -36,11 +35,17 @@
         <a class="button secondary" href="#contact">Let's Talk</a>
       </div>
     </div>
-    <div class="hero-card">
+    <div class="hero-visual">
+      <div class="headshot-wrap">
+        <img src="/assets/nathan-mitchell-headshot.png" alt="Nathan R. Mitchell, Leadership Consultant and Forbes Coaches Council member">
+        <div class="credential">FORBES<br><span>COACHES COUNCIL</span></div>
+      </div>
+      <div class="hero-card">
       <span class="card-kicker">THE LEAD EMPOWERED APPROACH</span>
       <div class="pillar"><strong>01</strong><div><b>Empower the Leader</b><p>Develop self-aware, confident leaders who communicate clearly and lead intentionally.</p></div></div>
       <div class="pillar"><strong>02</strong><div><b>Align the Team</b><p>Build teams that understand one another, communicate across differences, and execute together.</p></div></div>
       <div class="pillar"><strong>03</strong><div><b>Transform the Culture</b><p>Create an environment where high performance and sustainable health can coexist.</p></div></div>
+      </div>
     </div>
   </div>
 </section>
@@ -67,9 +72,10 @@
 </section>
 
 <section class="section dark" id="about">
-  <div class="container split">
-    <div class="about-photo"><img src="/assets/nathan-mitchell-headshot.png" alt="Nathan R. Mitchell, leadership consultant and founder of Lead Empowered"></div>
-    <div><p class="eyebrow">ABOUT NATHAN</p><h2>Leadership isn't about having all the answers. It's about creating the conditions for people to succeed.</h2><p>Nathan R. Mitchell is a leadership consultant, executive advisor, author, speaker, and host of Lead Empowered TV.</p><p>After years of leading teams and developing leaders across education, business, and professional environments, Nathan founded Lead Empowered to help organizations answer one persistent question:</p><p class="quote">How do you build a high-performing organization without burning out the people responsible for making it successful?</p><a class="text-link" href="#contact">Meet Nathan →</a></div>
+  <div class="container split about-grid">
+    <div class="about-brand"><img src="/assets/lead-empowered-brand.png" alt="Lead Empowered — Unlock Your True Potential"></div>
+    <div><p class="eyebrow">ABOUT NATHAN</p><h2>Leadership isn't about having all the answers. It's about creating the conditions for people to succeed.</h2></div>
+    <div><p>Nathan R. Mitchell is a leadership consultant, executive advisor, author, speaker, and host of Lead Empowered TV.</p><p>After years of leading teams and developing leaders across education, business, and professional environments, Nathan founded Lead Empowered to help organizations answer one persistent question:</p><p class="quote">How do you build a high-performing organization without burning out the people responsible for making it successful?</p><a class="text-link" href="#contact">Meet Nathan →</a></div>
   </div>
 </section>
 
@@ -112,6 +118,6 @@
 </section>
 </main>
 
-<footer><div class="container footer-wrap"><div><a class="brand footer-brand" href="/"><img src="/assets/lead-empowered-logo.png" alt="Lead Empowered"></a><p>Empowered Leaders. Aligned Teams. Healthier Cultures.</p></div><p>© 2026 Lead Empowered LLC. All rights reserved.</p></div></footer>
+<footer><div class="container footer-wrap"><div><a class="brand-logo footer-logo" href="/" aria-label="Lead Empowered home"><img src="/assets/lead-empowered-logo.png" alt="Lead Empowered — Unlock Your True Potential"></a><p>Empowered Leaders. Aligned Teams. Healthier Cultures.</p></div><p>© 2026 Lead Empowered LLC. All rights reserved.</p></div></footer>
 </body>
 </html>

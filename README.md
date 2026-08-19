@@ -1,6 +1,6 @@
 # Lead Empowered — Netlify Prototype
 
-This is the initial standalone prototype with brand assets for the new Lead Empowered website.
+This is the initial standalone prototype for the new Lead Empowered website.
 
 ## Important
 - This is a **new site only**. It does not migrate, redirect, or replace LeadEmpowered.com.
@@ -13,7 +13,5 @@ Upload this folder to a GitHub repository and connect that repository to Netlify
 
 The requested Netlify URL appears to contain a typo: `leadempowered.netlfiy.app`. The standard Netlify subdomain format is `leadempowered.netlify.app`.
 
-## Included brand assets
-- Primary Lead Empowered logo artwork
-- Horizontal Lead Empowered wordmark
-- Nathan R. Mitchell headshot with Forbes Coaches Council badge
+## Version 3 asset fix
+The uploaded logo, brand graphic, and headshot are physically included in `assets/`, so the site does not depend on chat attachments or external image paths.
