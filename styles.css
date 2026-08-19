@@ -11,3 +11,34 @@
 
 .footer-talk-button{background:#000!important;color:#fff!important}
 .footer-talk-button:hover{background:#1a1a1a!important}
+
+/* Lead Empowered TV section — refined layout */
+.media{background:#102b3a;color:#fff;padding:96px 0}
+.media-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(420px,.95fr);gap:72px;align-items:center}
+.media-copy{max-width:650px}
+.media h2{font-size:clamp(2.35rem,4vw,4rem);max-width:620px}
+.media-copy>p:not(.eyebrow){color:#d4e0e5;font-size:1.05rem;max-width:590px}
+.media-copy .light-button{margin-top:8px;background:#fff;color:#102b3a;border:1px solid #fff;font-weight:800;box-shadow:0 8px 22px rgba(0,0,0,.16)}
+.media-copy .light-button:hover{background:#2b6b99;color:#fff;border-color:#2b6b99}
+.media-endorsement{margin:32px 0 0;padding:22px 24px;border-left:3px solid #d6aa4b;background:rgba(255,255,255,.055);max-width:620px}
+.media-endorsement p{font-size:.92rem;line-height:1.65;color:#e4ecef;margin:0 0 10px}
+.media-endorsement cite{font-size:.75rem;color:#9bc4d8;font-style:normal;font-weight:800}
+.media-visual{display:flex;flex-direction:column;gap:18px;min-width:0}
+.media-image{background:#fff;padding:10px;border-radius:6px;box-shadow:0 25px 55px rgba(0,0,0,.3)}
+.media-image img{display:block;width:100%;height:auto;border-radius:3px}
+.foundation-link{display:block;padding:16px 20px 14px;background:#fff;border:1px solid rgba(255,255,255,.3);border-radius:6px;text-decoration:none;text-align:center;box-shadow:0 12px 28px rgba(0,0,0,.16);transition:transform .2s ease,box-shadow .2s ease}
+.foundation-link:hover{transform:translateY(-2px);box-shadow:0 17px 34px rgba(0,0,0,.24)}
+.foundation-kicker{display:block;margin:0 0 9px;color:#6a757b;font-size:.58rem;font-weight:800;letter-spacing:.18em}
+.foundation-link img{display:block;width:min(100%,500px);max-height:78px;height:auto;object-fit:contain;margin:0 auto}
+@media(max-width:900px){
+  .media-grid{grid-template-columns:1fr;gap:48px}
+  .media-copy{max-width:none}
+  .media-visual{max-width:720px;margin:0 auto;width:100%}
+}
+@media(max-width:620px){
+  .media{padding:75px 0}
+  .media h2{font-size:2.45rem}
+  .media-image{padding:7px}
+  .foundation-link{padding:13px 15px}
+  .foundation-link img{max-height:62px}
+}
