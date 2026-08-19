@@ -44,3 +44,10 @@ The uploaded logo, brand graphic, and headshot are physically included in `asset
 ## Version 7 changes
 - Added Craig Groeschel endorsement beneath the hero content.
 - Tightened the hero grid and reduced left-side whitespace.
+
+## Version 8 changes
+- Completely redesigned the hero as a dark navy, premium, personal section.
+- Removed the competing three-pillar card from the hero; the three-pillar approach remains the next section.
+- Made the supplied Lead Empowered hero thumbnail the dominant visual on the right.
+- Tightened the hero's horizontal spacing and reduced left-side empty space.
+- Preserved the Craig Groeschel endorsement beneath the hero copy.
