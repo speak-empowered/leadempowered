@@ -42,3 +42,7 @@
   .foundation-link{padding:13px 15px}
   .foundation-link img{max-height:62px}
 }
+
+.footer-verse{max-width:700px;margin:28px auto 0;padding-top:24px;border-top:1px solid rgba(255,255,255,.14);text-align:center;color:#b9c4c6}
+.footer-verse p{margin:0 0 7px;font-family:Manrope,sans-serif;font-size:.9rem;line-height:1.55}
+.footer-verse cite{font-style:normal;color:#d6aa4b;font-size:.72rem;font-weight:800;letter-spacing:.06em}
