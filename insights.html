@@ -99,7 +99,7 @@ fetch(PROXY_URL)
     return r.json();
   })
   .then(data => {
-    const items = (data.items || []).slice(0, 12);
+    const items = (data.items || []).sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate)).slice(0, 12);
     if (!items.length) throw new Error('No articles found');
 
     status.textContent = 'Latest leadership insights';
