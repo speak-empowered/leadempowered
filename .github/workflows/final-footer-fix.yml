@@ -1,0 +1,32 @@
+name: Final footer fix
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/final-footer-fix.yml'
+permissions:
+  contents: write
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fix footer icons
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          css=Path('styles.css')
+          c=css.read_text()
+          marker='/* Consistent social icons across the site */'
+          if marker not in c:
+              c += '''\n/* Consistent social icons across the site */\n.site-footer .footer-social-links{display:flex;align-items:center;justify-content:center;gap:10px;margin:10px 0}\n.site-footer .footer-social-links a{display:inline-flex!important;align-items:center;justify-content:center;width:38px;height:38px;padding:0!important;border:1px solid rgba(255,255,255,.28);border-radius:50%;color:#fff!important;background:rgba(255,255,255,.06);line-height:1}\n.site-footer .footer-social-links a:hover{background:#2b6b99;border-color:#2b6b99;transform:translateY(-1px)}\n.site-footer .footer-social-links svg{display:block!important;width:20px!important;height:20px!important;min-width:20px;min-height:20px;fill:currentColor!important;stroke:none!important}\n.site-footer .footer-social-label{margin:8px 0 0;text-align:center;color:#b7c3c7;font-size:.75rem}\n'''
+              css.write_text(c)
+          ip=Path('insights/index.html')
+          x=ip.read_text().replace('<svg viewBox="0 0 24 24" aria-hidden="true">','<svg viewBox="0 0 24 24" aria-hidden="true" style="display:block;width:20px;height:20px;fill:currentColor">')
+          ip.write_text(x)
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add styles.css insights/index.html
+          git commit -m "Fix social footer icon rendering" || exit 0
+          git push
