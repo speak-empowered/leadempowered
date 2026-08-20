@@ -1,3 +1,4 @@
+# Triggered by changes to this one-time workflow.
 name: One-time site polish
 on:
   push:
@@ -15,21 +16,16 @@ jobs:
         run: |
           python - <<'PY'
           from pathlib import Path
-
           p = Path('index.html')
           s = p.read_text()
           old = '<article class="resource"><span>04</span><h3>Insights</h3><p>Explore Nathan\'s latest leadership articles and ideas.</p><a href="/insights">Explore The Blog →</a></article>'
-          if old in s:
-              s = s.replace(old, '')
+          if old in s: s = s.replace(old, '')
           s = s.replace('<article class="resource"><span>05</span><h3>Forbes</h3>', '<article class="resource"><span>04</span><h3>Forbes</h3>')
           p.write_text(s)
-
           css = Path('styles.css')
           c = css.read_text()
           block = '''\n\n/* Consistent social icons across the site */\n.site-footer .footer-social-links{display:flex;align-items:center;justify-content:center;gap:10px;margin:10px 0}\n.site-footer .footer-social-links a{display:inline-flex!important;align-items:center;justify-content:center;width:38px;height:38px;padding:0!important;border:1px solid rgba(255,255,255,.28);border-radius:50%;color:#fff!important;background:rgba(255,255,255,.06);line-height:1}\n.site-footer .footer-social-links a:hover{background:#2b6b99;border-color:#2b6b99;transform:translateY(-1px)}\n.site-footer .footer-social-links svg{display:block!important;width:20px!important;height:20px!important;min-width:20px;min-height:20px;fill:currentColor!important;stroke:none!important}\n.site-footer .footer-social-label{margin:8px 0 0;text-align:center;color:#b7c3c7;font-size:.75rem}\n'''
-          if '/* Consistent social icons across the site */' not in c:
-              css.write_text(c + block)
-
+          if '/* Consistent social icons across the site */' not in c: css.write_text(c + block)
           ip = Path('insights/index.html')
           x = ip.read_text()
           start = x.index('<header class="site-header">')
@@ -39,7 +35,6 @@ jobs:
           x = x.replace('<svg viewBox="0 0 24 24" aria-hidden="true">', '<svg viewBox="0 0 24 24" aria-hidden="true" style="display:block;width:20px;height:20px;fill:currentColor">')
           ip.write_text(x)
           PY
-
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add index.html styles.css insights/index.html
