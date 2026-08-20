@@ -1,2 +1,3 @@
 /insights  /insights/  200
 /insights/  /insights/  200
+/api/posts  /.netlify/functions/posts  200
