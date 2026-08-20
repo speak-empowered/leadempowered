@@ -162,3 +162,11 @@
 .feed-error p{color:#5e6c70}
 @media(max-width:900px){.insights-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:620px){.insights-hero{padding:70px 0 60px}.insights-grid{grid-template-columns:1fr}.insight-card{min-height:250px}}
+
+
+/* Consistent social icons across the site */
+.site-footer .footer-social-links{display:flex;align-items:center;justify-content:center;gap:10px;margin:10px 0}
+.site-footer .footer-social-links a{display:inline-flex!important;align-items:center;justify-content:center;width:38px;height:38px;padding:0!important;border:1px solid rgba(255,255,255,.28);border-radius:50%;color:#fff!important;background:rgba(255,255,255,.06);line-height:1}
+.site-footer .footer-social-links a:hover{background:#2b6b99;border-color:#2b6b99;transform:translateY(-1px)}
+.site-footer .footer-social-links svg{display:block!important;width:20px!important;height:20px!important;min-width:20px;min-height:20px;fill:currentColor!important;stroke:none!important}
+.site-footer .footer-social-label{margin:8px 0 0;text-align:center;color:#b7c3c7;font-size:.75rem}
