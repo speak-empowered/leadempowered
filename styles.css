@@ -180,3 +180,10 @@
 @keyframes brand-marquee-scroll{to{transform:translateX(-50%)}}
 @media(max-width:560px){.brand-marquee{padding:14px 0}.brand-marquee-item{font-size:.67rem;letter-spacing:.14em}.brand-marquee-item::after{margin:0 23px}}
 @media(prefers-reduced-motion:reduce){.brand-marquee-track{animation:none}}
+
+/* Hero depth: restrained blue-green glow and architectural texture */
+.hero{position:relative;isolation:isolate;background:radial-gradient(ellipse 62% 85% at 84% 45%,rgba(43,107,153,.27) 0%,rgba(43,107,153,.09) 48%,transparent 78%),linear-gradient(112deg,#0c202b 0%,#102b3a 55%,#153544 100%)}
+.hero::before{content:"";position:absolute;z-index:-1;inset:0;pointer-events:none;opacity:.28;background:repeating-linear-gradient(132deg,transparent 0,transparent 94px,rgba(160,195,205,.12) 95px,transparent 96px);mask-image:linear-gradient(90deg,transparent 35%,#000 100%)}
+.hero::after{content:"";position:absolute;z-index:-1;right:-12%;bottom:-67%;width:65%;aspect-ratio:1;border:1px solid rgba(214,170,75,.17);border-radius:50%;pointer-events:none}
+.hero-shell{position:relative;z-index:1}
+@media(max-width:850px){.hero::before{opacity:.16;mask-image:linear-gradient(180deg,transparent 20%,#000 100%)}.hero::after{right:-45%;bottom:-20%;width:110%}}
