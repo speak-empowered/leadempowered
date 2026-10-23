@@ -170,3 +170,13 @@
 .site-footer .footer-social-links a:hover{background:#2b6b99;border-color:#2b6b99;transform:translateY(-1px)}
 .site-footer .footer-social-links svg{display:block!important;width:20px!important;height:20px!important;min-width:20px;min-height:20px;fill:currentColor!important;stroke:none!important}
 .site-footer .footer-social-label{margin:8px 0 0;text-align:center;color:#b7c3c7;font-size:.75rem}
+
+/* Seamless, premium brand marquee beneath homepage hero */
+.brand-marquee{overflow:hidden;background:#102b3a;border-top:1px solid rgba(214,170,75,.35);border-bottom:1px solid rgba(214,170,75,.35);color:#fff;padding:17px 0}
+.brand-marquee-track{display:flex;width:max-content;animation:brand-marquee-scroll 36s linear infinite;will-change:transform}
+.brand-marquee-group{display:flex;align-items:center;flex:none}
+.brand-marquee-item{display:inline-flex;align-items:center;flex:none;white-space:nowrap;font-family:Manrope,sans-serif;font-size:.76rem;font-weight:800;letter-spacing:.19em;line-height:1.3;text-transform:uppercase}
+.brand-marquee-item::after{content:'◆';color:#d6aa4b;font-size:.46rem;margin:0 35px}
+@keyframes brand-marquee-scroll{to{transform:translateX(-50%)}}
+@media(max-width:560px){.brand-marquee{padding:14px 0}.brand-marquee-item{font-size:.67rem;letter-spacing:.14em}.brand-marquee-item::after{margin:0 23px}}
+@media(prefers-reduced-motion:reduce){.brand-marquee-track{animation:none}}
