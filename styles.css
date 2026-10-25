@@ -187,10 +187,3 @@
 .hero::after{content:"";position:absolute;z-index:-1;right:-12%;bottom:-67%;width:65%;aspect-ratio:1;border:1px solid rgba(214,170,75,.17);border-radius:50%;pointer-events:none}
 .hero-shell{position:relative;z-index:1}
 @media(max-width:850px){.hero::before{opacity:.16;mask-image:linear-gradient(180deg,transparent 20%,#000 100%)}.hero::after{right:-45%;bottom:-20%;width:110%}}
-
-/* Editorial mountain photo treatment for the two-column homepage hero */
-.hero .hero-image-frame{padding:0;background:transparent;border-radius:5px;overflow:hidden;transform:none;box-shadow:0 24px 60px rgba(0,0,0,.25)}
-.hero .hero-image-frame img{width:100%;height:390px;object-fit:cover;object-position:30% center;border-radius:0}
-.hero .hero-stat{margin:0 12px;border-radius:0 0 5px 5px}
-@media(max-width:850px){.hero .hero-image-frame img{height:auto;aspect-ratio:16/10;object-fit:cover}}
-@media(max-width:560px){.hero .hero-image-frame img{aspect-ratio:4/3;object-position:27% center}}
